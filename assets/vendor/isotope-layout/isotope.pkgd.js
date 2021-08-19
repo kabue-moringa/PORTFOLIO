@@ -264,16 +264,6 @@ proto.allOff = function() {
 return EvEmitter;
 
 }));
-
-/*!
- * getSize v2.0.3
- * measure size of elements
- * MIT license
- */
-
-/* jshint browser: true, strict: true, undef: true, unused: true */
-/* globals console: false */
-
 ( function( window, factory ) {
   /* jshint strict: false */ /* globals define, module */
   if ( typeof define == 'function' && define.amd ) {
@@ -289,10 +279,6 @@ return EvEmitter;
 
 })( window, function factory() {
 'use strict';
-
-// -------------------------- helpers -------------------------- //
-
-// get a number from a string, not a percentage
 function getStyleSize( value ) {
   var num = parseFloat( value );
   // not a percent like '100%', and a number
@@ -306,9 +292,6 @@ var logError = typeof console == 'undefined' ? noop :
   function( message ) {
     console.error( message );
   };
-
-// -------------------------- measurements -------------------------- //
-
 var measurements = [
   'paddingLeft',
   'paddingRight',
